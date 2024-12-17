@@ -285,14 +285,15 @@ complete list of available options is shown below::
 
     ``formTemplate``
         Use this to override the form that gets cloned, each time a new form
-        instance is added. If specified, this should be a jQuery selector.
+        instance is added. If specified, this should be a jQuery selector. If
+        you don't provide a value, this defaults to $('#empty-form-template').
 
     ``extraClasses``
         Set this to an array of CSS class names (defaults to an empty array),
         and the classes will be applied to each form in the formset in turn.
         This can easily be used to acheive row-striping effects, which can
         make large formsets easier to deal with visually.
-        
+
 .. versionadded:: 1.3
 
     ``keepFieldValues``
